@@ -2,7 +2,7 @@
   {
     "name": "Partner 1",
     "description": "Part of Network",
-    "image": "https://azufelt.github.io/vanilla-mock-up/assets/frame1.png",
+    "image": "https://azufelt.github.io/vanilla-mockup/assets/frame1.png",
     "url": "#",
     "cta": "View all deals and offers",
     "icon": "fa-solid fa-car"
@@ -10,7 +10,7 @@
   {
     "name": "Partner 2",
     "description": "3 Offers available",
-    "image": "https://azufelt.github.io/vanilla-mock-up/assets/frame2.png",
+    "image": "https://azufelt.github.io/vanilla-mockup/assets/frame2.png",
     "url": "#",
     "cta": "View all deals and offers",
     "icon": "fa-light fa-percent accent"
@@ -18,7 +18,7 @@
   {
     "name": "Partner 3",
     "description": "2 Offers available",
-    "image": "https://azufelt.github.io/vanilla-mock-up/assets/frame3.png",
+    "image": "https://azufelt.github.io/vanilla-mockup/assets/frame3.png",
     "url": "#",
     "cta": "View all deals and offers",
     "icon": "fa-light fa-percent accent"
@@ -26,7 +26,7 @@
   {
     "name": "Partner 4",
     "description": "1 Offers available",
-    "image": "https://azufelt.github.io/vanilla-mock-up/assets/frame4.png",
+    "image": "https://azufelt.github.io/vanilla-mockup/assets/frame4.png",
     "url": "#",
     "cta": "View all deals and offers",
     "icon": "fa-light fa-percent accent"
