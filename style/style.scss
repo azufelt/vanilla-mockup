@@ -1,0 +1,208 @@
+// **** Mobile First Design ****
+@import "typography";
+@import "colors";
+
+$main-margin: 30px;
+$padding: 5%;
+$max-char: 30ch;
+$line-ht: 1.5;
+$font-family: "Montserrat", sans-serif;
+
+//Character Limit
+@mixin maxChar($charLen) {
+  max-width: $charLen;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Media Queries
+$lg-break: 48rem;
+@mixin breakpoint($break) {
+  @if $break==break {
+    @media (min-width: $lg-break) {
+      @content;
+    }
+  }
+}
+
+//******** STYLE **********//
+* {
+  padding: 0;
+  margin: 0;
+  line-height: $line-ht;
+  font-family: $font-family;
+}
+body {
+  min-width: 375px;
+  @include breakpoint(break) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+.accent {
+  color: $accent;
+  font-size: 1.8rem;
+}
+label {
+  display: none;
+}
+
+// Hero Module
+.hero-module {
+  min-height: 589px;
+  background-color: $main;
+  padding-bottom: 5rem;
+  @include breakpoint(break){
+    background-color: transparent;
+  }
+  .hero-image {
+    background-image: url("../assets/hero.jpg");
+    background-color: $main;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+    width: 100%;
+    @include breakpoint(break) {
+      min-height: 746px;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+    }
+  }
+.hero-text {
+  padding: 7%;
+    h1 {
+      padding-top: 210px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $light;
+      @include maxChar(30ch);
+      @include breakpoint(break) {
+        padding-top: 0;
+        font-size: 64px;
+        font-weight: 700;
+        @include maxChar(40ch);
+      }
+    }
+    h2 {
+      margin: 10px 0 20px 0;
+      font-size: 20px;
+      color: $light;
+      font-weight: 200;
+      @include maxChar(92ch);
+      @include breakpoint(break) {
+        margin: $main-margin 0 20px 0;
+        font-size: 24px;
+        font-weight:400;
+        @include maxChar(114ch);
+      }
+    }
+    a {
+      display: block;
+      font-weight: 200;
+      color: $light;
+      margin: .8rem 0;
+    }
+    input[type="search"] {
+      display: block;
+      width: 327px;
+      height: 46px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding-left: 5%;
+    }
+    input[type="search"]::placeholder {
+      color: $main;
+    }
+    @include breakpoint(break) {
+      position: absolute;
+      top: 10%;
+      // left: 5%;
+      max-width: 40%;
+      padding-bottom: 5%;
+    }
+  }
+}
+
+// Tile Container
+.tile-container {
+  padding: 7%;
+  margin-top: -11rem;
+
+  h3 {
+    color: $light;
+    font-weight: 700;
+    background-color: $main;
+    @include breakpoint(break) {
+      background-color: transparent;
+      filter: drop-shadow(0px 0px 0px $main);
+      margin-left: 7%;
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: $light;
+    }
+  }
+  .tile-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint(break) {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 1rem;
+      margin: 2%;
+    }
+  }
+  @include breakpoint(break) {
+    margin-top: -17rem;
+    padding: 0;
+  }
+}
+
+// Financing Tile Individual
+article {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  max-width: 337.5px;
+  img {
+    display: block;
+    height: 180px;
+  }
+  h4{
+    font-size: 24px;
+    font-weight:700;
+    padding-top: 0.5rem;
+    color: $main;
+    @include maxChar(30ch);
+    @include breakpoint(break) {
+      margin-left: 0;
+    }
+  }
+  .icon {
+    padding-right: 5px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0.5rem 0 1rem 0;
+    @include maxChar(30ch);
+  }
+  .cta-container {
+    text-align: right;
+    a {
+      color: $gray;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+  @include breakpoint(break) {
+    margin-top: 0;
+  }
+}
