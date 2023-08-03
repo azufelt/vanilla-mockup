@@ -20,18 +20,17 @@ In my SCSS I separated out the most common changes into partials so the fonts/co
   * Continuing to Refactor the code to optimize further variables, consolidated mixins, and leveraging @extend classes in my markup.
   * Add additional @media queries so it is looking great at all screen sizes. This project was optimized for mobile & desktop only. 
 
-## Some items of Uncertainty:
+## Some items of uncertainty:
  Being unable to thoroughly communicate with the designer on the required specs, some items I was unsure about were:
-  * Some of the labeling on the wireframe; What was referenced was a Sub Headline, what was shown appeared more like <p> text. I would have wanted to change it based on visual heirarchy that also maintains Accessibility heirarchy requirements. 
-  * It drove me nuts hot having the exact icons, because it caused some of the spacing and font-size specs to appear off. 
+  * Some of the labeling on the wireframe; What was referenced was a Sub Headline, what was shown appeared more like paragraph text. I would have wanted to change it based on visual heirarchy that also maintains Accessibility heirarchy requirements. 
+  * It drove me nuts not having the exact icons, because it caused some of the spacing and font-size specs to appear off. 
 
 ## Development Environment
 
-*VS Code
-*HTML5
-*CSS
-*JavaScript
-*SCSS
+* VS Code
+* HTML5
+* JavaScript ES6
+* SCSS
 
-*Font Awesome Icons
-*Google Fonts
+* Font Awesome Icons
+* Google Fonts
