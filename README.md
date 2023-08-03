@@ -10,7 +10,7 @@ In my SCSS I separated out the most common changes into partials so the fonts/co
 
 ## Module Preview
 <img src="/assets/mockup-large.png" width="600">
-<img src="assets/mockup-mobile.png" width="200">
+<img src="/assets/mockup-mobile.png" width="200">
 
 ## Live Site  in Pages
 [Vanilla Mockup](https://azufelt.github.io/vanilla-mockup/)
