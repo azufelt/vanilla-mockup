@@ -157,6 +157,7 @@ label {
   .tile-container .tile-grid {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
     gap: 1rem;
     margin: 2%;
   }
