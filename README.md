@@ -1,6 +1,6 @@
 # vanilla-mockup
 ## Overview of HERO image modal
-####Time Spent
+#### Time Spent
   * Roughly 3.5 hours
 
 This project is featuring a code snippet for a Hero Image modal, built to design/wireframe specs. The advertising tiles are dynamically inserted, pulling specific data from a JSON file. The thought process for this was to avoid hard-coding repetitive data into html, as well, updates made to JSON can be done easier, much faster and would allow for improved maintenance and scalability.
